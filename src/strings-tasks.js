@@ -166,7 +166,7 @@ function removeLastOccurrences(str, value) {
   const index = str.lastIndexOf(value);
   return index === -1
     ? str
-    : str.slice(0, index) + str.slice(index + str.length);
+    : str.slice(0, index) + str.slice(index + value.length);
 }
 
 /**
